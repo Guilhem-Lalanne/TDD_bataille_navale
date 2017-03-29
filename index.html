@@ -1,9 +1,13 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
+
 	<meta charset="UTF-8">
+
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mocha/3.2.0/mocha.min.css" integrity="sha256-1ePRFUobB5Zd3kgc+DLyOjFdCr70d5903V6n7PDH/XQ=" crossorigin="anonymous" />
+	
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/mocha/3.2.0/mocha.min.js" integrity="sha256-Y/GWZjjsILZLIYcDXeCnIj/h9M+jBCucM1t3wI7jWkk=" crossorigin="anonymous"></script>
+	
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/chai/3.5.0/chai.min.js" integrity="sha256-BKU3X97p6yXHn1wgJmMJQ0CNhqCdxVGjBf0EwjSzi3c=" crossorigin="anonymous"></script>
 
 	<script
@@ -18,7 +22,6 @@
 <div id="mocha"></div>
 
 <script type="text/javascript">
-
 
 	var grid = new Array();
 
@@ -45,10 +48,23 @@
 
 	initialiseGrid();
 
+	function boat(width, lenght, orientation,x,y, hp) {
+		this.width = width;
+		this.lenght = lenght;
+		this.orientation = orientation;
+		this.x = x;
+		this.y = y;
+		this.hp = hp;
+	}
+
+	var boat1 = new boat(2,2,"hor",1,1,2);
+
+	console.log(boat1);
+
 	/* END MAIN SCRIPT */
 
 	/* MOCHA TEST */
-	
+
 	mocha.setup('bdd');
 
 	var expect = chai.expect;
@@ -62,6 +78,17 @@
 	describe("Test sur la grille", function() {
 		it("La grille n'est pas null", function() {
 			expect(grid).to.not.be.null;
+		})
+	})
+
+	describe("Test d'insertion des bateaux", function() {
+
+		it("Le bateau n'est pas en dehors de la grille", function() {
+			chai.assert.isOk('everything', 'everything is ok');
+		})
+
+		it("Le bateau ne chevauche rien", function() {
+
 		})
 	})
 
