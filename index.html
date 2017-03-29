@@ -1,9 +1,15 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
 <head>
+	<meta charset="UTF-8">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mocha/3.2.0/mocha.min.css" integrity="sha256-1ePRFUobB5Zd3kgc+DLyOjFdCr70d5903V6n7PDH/XQ=" crossorigin="anonymous" />
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/mocha/3.2.0/mocha.min.js" integrity="sha256-Y/GWZjjsILZLIYcDXeCnIj/h9M+jBCucM1t3wI7jWkk=" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/chai/3.5.0/chai.min.js" integrity="sha256-BKU3X97p6yXHn1wgJmMJQ0CNhqCdxVGjBf0EwjSzi3c=" crossorigin="anonymous"></script>
+
+	<script
+			  src="https://code.jquery.com/jquery-3.2.1.min.js"
+			  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+			  crossorigin="anonymous"></script>
 
 	<title></title>
 </head>
@@ -12,17 +18,57 @@
 <div id="mocha"></div>
 
 <script type="text/javascript">
+
+
+	var grid = new Array();
+
+	/* MAIN SCRIPT */
+
+	function test() {
+		return 10;
+	}
+
+
+	function initialiseGrid() {
+
+		for(var i = 0; i <= 5; i++) {
+			grid[i] = new Array();
+			for(var j = 0; j <= 5; j++) {
+				grid[i][j] = 0;
+			}
+		}
+
+		$.each(grid, function(key, value) {
+			console.log(value);
+		});
+	}
+
+	initialiseGrid();
+
+	/* END MAIN SCRIPT */
+
+	/* MOCHA TEST */
+	
 	mocha.setup('bdd');
 
 	var expect = chai.expect;
 
-	describe('Mocha + Chai JsFiddle', function() {
+	/*describe('Teste de la function test', function() {
 		it('really runs', function() {
-	  	expect(0).to.equal(0);
+	  	expect(test()).to.equal(9);
 	  });
-	});
+	});*/
+
+	describe("Test sur la grille", function() {
+		it("La grille n'est pas null", function() {
+			expect(grid).to.not.be.null;
+		})
+	})
 
 	mocha.run();
+
+	/* END MOCHA */
+
 </script>
 
 </body>
