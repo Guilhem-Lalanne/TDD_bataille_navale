@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mocha/3.2.0/mocha.min.css" integrity="sha256-1ePRFUobB5Zd3kgc+DLyOjFdCr70d5903V6n7PDH/XQ=" crossorigin="anonymous" />
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/mocha/3.2.0/mocha.min.js" integrity="sha256-Y/GWZjjsILZLIYcDXeCnIj/h9M+jBCucM1t3wI7jWkk=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/chai/3.5.0/chai.min.js" integrity="sha256-BKU3X97p6yXHn1wgJmMJQ0CNhqCdxVGjBf0EwjSzi3c=" crossorigin="anonymous"></script>
+
+	<title></title>
+</head>
+<body>
+
+<div id="mocha"></div>
+
+<script type="text/javascript">
+	mocha.setup('bdd');
+
+	var expect = chai.expect;
+
+	describe('Mocha + Chai JsFiddle', function() {
+		it('really runs', function() {
+	  	expect(0).to.equal(0);
+	  });
+	});
+
+	mocha.run();
+</script>
+
+</body>
+</html>
