@@ -77,8 +77,6 @@
 		}
 	}
 
-	refreshScreen();
-
     var oPlayer1 = new Player();
 	var boat1J1 = new Boat(1,1,1,2,2,0,5);
     
@@ -99,7 +97,23 @@
 
 	}
 	
-	askAttackPosition();
+
+	var run = true;
+	var j = 1;
+	
+	do {
+		console.log("Tour du joueur "+j);
+		position = askAttackPosition();
+		refreshScreen();
+		if(position == "x,y") {
+			run = false;
+		}
+		j++;
+
+		if(j>2) {
+			j=1
+		}
+	} while(run);
 
 	//var boat1 = new boat(2,2,"hor",1,1,2);
 
