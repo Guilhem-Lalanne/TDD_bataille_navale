@@ -19,100 +19,12 @@
 </head>
 <body>
 
+<div id="game" style="letter-spacing: 10px;"></div>
+
 <div id="mocha"></div>
 
-<script type="text/javascript">
-
-	//var grid = new Array();
-
-	/* MAIN SCRIPT */
-
-	function test() {
-		return 10;
-	}
-
-	class Grid {
-
-		constructor() {
-			this.grid = new Array();
-			this.initialiseGrid();
-		}
-
-		initialiseGrid() {
-
-			for(var i = 0; i <= 5; i++) {
-				this.grid[i] = new Array();
-				for(var j = 0; j <= 5; j++) {
-					this.grid[i][j] = 0;
-				}
-			}
-		}
-
-		diplayGrid() {
-			$.each(this.grid, function(key, value) {
-				console.log(value);
-			});
-		}
-	}
-
-	const oGridPlayer1 = new Grid();
-	const oGridPlayer2 = new Grid();
-
-	console.log("JOUEUR 1");
-	oGridPlayer1.diplayGrid();
-	console.log("JOUEUR 2");
-	oGridPlayer2.diplayGrid();
-
-	function boat(width, lenght, orientation,x,y, hp) {
-		this.width = width;
-		this.lenght = lenght;
-		this.orientation = orientation;
-		this.x = x;
-		this.y = y;
-		this.hp = hp;
-	}
-
-	var boat1 = new boat(2,2,"hor",1,1,2);
-
-	console.log(boat1);
-	console.log(oGridPlayer1.grid);
-
-	/* END MAIN SCRIPT */
-
-	/* MOCHA TEST */
-
-	mocha.setup('bdd');
-
-	var expect = chai.expect;
-
-	/*describe('Teste de la function test', function() {
-		it('really runs', function() {
-	  	expect(test()).to.equal(9);
-	  });
-	});*/
-
-	describe("Test de la classe 'Grid'", function() {
-		it("La grille n'est pas null", function() {
-			expect(oGridPlayer1.grid).to.not.be.null;
-		})
-	})
-
-	describe("Test d'insertion des bateaux", function() {
-
-		it("Le bateau n'est pas en dehors de la grille", function() {
-			chai.assert.isOk('everything', 'everything is ok');
-		})
-
-		it("Le bateau ne chevauche rien", function() {
-
-		})
-	})
-
-	mocha.run();
-
-	/* END MOCHA */
-
-</script>
+<script type="text/javascript" src="main.js"></script>
+<script type="text/javascript" src="tests.js"></script>
 
 </body>
 </html>
