@@ -23,7 +23,7 @@
 
 <script type="text/javascript">
 
-	var grid = new Array();
+	//var grid = new Array();
 
 	/* MAIN SCRIPT */
 
@@ -31,22 +31,37 @@
 		return 10;
 	}
 
+	class Grid {
 
-	function initialiseGrid() {
+		constructor() {
+			this.grid = new Array();
+			this.initialiseGrid();
+		}
 
-		for(var i = 0; i <= 5; i++) {
-			grid[i] = new Array();
-			for(var j = 0; j <= 5; j++) {
-				grid[i][j] = 0;
+		initialiseGrid() {
+
+			for(var i = 0; i <= 5; i++) {
+				this.grid[i] = new Array();
+				for(var j = 0; j <= 5; j++) {
+					this.grid[i][j] = 0;
+				}
 			}
 		}
 
-		$.each(grid, function(key, value) {
-			console.log(value);
-		});
+		diplayGrid() {
+			$.each(this.grid, function(key, value) {
+				console.log(value);
+			});
+		}
 	}
 
-	initialiseGrid();
+	const oGridPlayer1 = new Grid();
+	const oGridPlayer2 = new Grid();
+
+	console.log("JOUEUR 1");
+	oGridPlayer1.diplayGrid();
+	console.log("JOUEUR 2");
+	oGridPlayer2.diplayGrid();
 
 	function boat(width, lenght, orientation,x,y, hp) {
 		this.width = width;
@@ -60,6 +75,7 @@
 	var boat1 = new boat(2,2,"hor",1,1,2);
 
 	console.log(boat1);
+	console.log(oGridPlayer1.grid);
 
 	/* END MAIN SCRIPT */
 
@@ -75,9 +91,9 @@
 	  });
 	});*/
 
-	describe("Test sur la grille", function() {
+	describe("Test de la classe 'Grid'", function() {
 		it("La grille n'est pas null", function() {
-			expect(grid).to.not.be.null;
+			expect(oGridPlayer1.grid).to.not.be.null;
 		})
 	})
 
