@@ -3,7 +3,7 @@
 
 mocha.setup('bdd');
 
-var expect = chai.expect;
+var expect = chai.expect; // faites ça soit pour expect ET assert, soit pour aucun ; avec un seul des deux on a un peu l'impression, dans votre code, que vous utilisez des libs différentes
 
 /*describe('Teste de la function test', function() {
     it('really runs', function() {
