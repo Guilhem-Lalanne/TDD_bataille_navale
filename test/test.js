@@ -22,7 +22,7 @@ var mocha = require('mocha');
     });
 });*/
 
-require('main.js');
+var main = require('main.js');
 
 var assert = require('assert');
 
