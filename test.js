@@ -1,7 +1,10 @@
 
 var assert = require('assert');
 
-assert.equal(1, 1, 'est egale');
+exports['ceci est un test'] = function(assert) {
+    assert.equal(1, 1, 'est egale');
+}
+
 
 /* MOCHA TEST */
 
