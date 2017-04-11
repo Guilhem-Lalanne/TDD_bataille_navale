@@ -23,12 +23,19 @@ var mocha = require('mocha');
 
 var assert = require('assert');
 
-describe('Array', function() {
-  describe('#indexOf()', function() {
-    it('should return -1 when the value is not present', function() {
-      assert.equal(-1, [1,2,3].indexOf(4));
+describe('Test sur la classe "GRID"', function() {
+
+    var oGrid;
+
+    beforeEach(function() {
+      oGrid = new oGrid(5);
+    })
+
+    it('La grille est un tableau', function() {
+
+      assert.isArray(oGrid.grid);
+
     });
-  });
 });
 
 
