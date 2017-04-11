@@ -1,5 +1,4 @@
 //var grid = new Array();
-require('grid.js')();
 
 /* MAIN SCRIPT */
 
