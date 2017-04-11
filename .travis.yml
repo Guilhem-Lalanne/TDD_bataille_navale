@@ -5,3 +5,4 @@ before_install:
   - "npm install -g mocha"
 install:
   - "npm install chai"
+  - "npm install --save-dev babel-cli babel-preset-env"
