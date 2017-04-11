@@ -1,0 +1,6 @@
+{
+	"main":"index.html",
+    "scripts": {
+	    "test":"mocha tests.js"
+    }
+}
