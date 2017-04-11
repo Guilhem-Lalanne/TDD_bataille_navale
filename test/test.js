@@ -27,7 +27,7 @@ var assert = require('assert');
 
 describe('Test sur la classe "GRID"', function() {
 
-    var oGrid = new oGridClass.Grid(5);
+    var oGrid = new Grid(5);
 
     it('La grille est un tableau', function() {
 
