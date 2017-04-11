@@ -1,12 +1,14 @@
 
+assert.equal(1, 1, 'est egale') // will log result
+
 /* MOCHA TEST */
 
-var mocha = require('mocha');
-var chai = require('chai');
+//var mocha = require('mocha');
+//var chai = require('chai');
 
-mocha.setup('bdd');
+//mocha.setup('bdd');
 
-var expect = chai.expect; // faites ça soit pour expect ET assert, soit pour aucun ; avec un seul des deux on a un peu l'impression, dans votre code, que vous utilisez des libs différentes
+//var expect = chai.expect; // faites ça soit pour expect ET assert, soit pour aucun ; avec un seul des deux on a un peu l'impression, dans votre code, que vous utilisez des libs différentes
 
 /*describe('Teste de la function test', function() {
     it('really runs', function() {
@@ -14,37 +16,37 @@ var expect = chai.expect; // faites ça soit pour expect ET assert, soit pour au
     });
 });*/
 
-describe("Test de la classe 'Grid'", function() {
+// describe("Test de la classe 'Grid'", function() {
 
-    var oGrid;
-    var size = 5;
+//     var oGrid;
+//     var size = 5;
 
-    beforeEach(function() {
-        oGrid = new Grid(size);
-    })
+//     beforeEach(function() {
+//         oGrid = new Grid(size);
+//     })
 
-    it("La grille est un tableau", function() {
-        chai.assert.isArray(oGrid.grid);
-    })
+//     it("La grille est un tableau", function() {
+//         chai.assert.isArray(oGrid.grid);
+//     })
 
-    // it("La grille n'est pas null", function() {
-    //     expect(oGrid.grid).to.not.be.null;
-    // })
+//     // it("La grille n'est pas null", function() {
+//     //     expect(oGrid.grid).to.not.be.null;
+//     // })
 
-    // it("La grille ne contient pas de -1", function() {
-    //     assert.notEqual(oGrid.grid[3][1], -1, 'these numbers are not equal');
-    //     // uncomplete
-    // })
+//     // it("La grille ne contient pas de -1", function() {
+//     //     assert.notEqual(oGrid.grid[3][1], -1, 'these numbers are not equal');
+//     //     // uncomplete
+//     // })
 
-    // it("La grille ne contient pas de nombres négatifs", function() {
-    //     for (var i = 0; i < size; i++) {
-    //         for (var j = 0; j < size; j++) {
-    //             assert.isAtLeast(oGrid.grid[i][j], 0, 'greater  than or equal to 0');
-    //         }
-    //     }
-    // })
+//     // it("La grille ne contient pas de nombres négatifs", function() {
+//     //     for (var i = 0; i < size; i++) {
+//     //         for (var j = 0; j < size; j++) {
+//     //             assert.isAtLeast(oGrid.grid[i][j], 0, 'greater  than or equal to 0');
+//     //         }
+//     //     }
+//     // })
 
-})
+// })
 
 // describe("Test sur la classe 'Boat'", function() {
 

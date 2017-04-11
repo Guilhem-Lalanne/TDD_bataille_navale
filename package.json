@@ -1,7 +1,7 @@
 {
 	"main":"index.html",
     "scripts": {
-	    "test":"mocha tests.js"
+	    "test":"tests.js"
     },
     "presets": ["env"]
 }
