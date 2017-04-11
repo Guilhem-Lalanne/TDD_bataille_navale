@@ -14,9 +14,10 @@ var expect = chai.expect; // faites ça soit pour expect ET assert, soit pour au
 describe("Test de la classe 'Grid'", function() {
 
     let oGrid;
+    let size = 5;
 
     beforeEach(() => {
-        oGrid = new Grid();
+        oGrid = new Grid(size);
     })
 
     it("La grille est un tableau", function() {
@@ -26,6 +27,20 @@ describe("Test de la classe 'Grid'", function() {
     it("La grille n'est pas null", function() {
         expect(oGrid.grid).to.not.be.null;
     })
+
+    it("La grille ne contient pas de -1", function() {
+        assert.notEqual(oGrid.grid[3][1], -1, 'these numbers are not equal');
+        // uncomplete
+    })
+
+    it("La grille ne contient pas de nombres négatifs", function() {
+        for (var i = 0; i < size; i++) {
+            for (var j = 0; j < size; j++) {
+                assert.isAtLeast(oGrid.grid[i][j], 0, 'greater  than or equal to 0');
+            }
+        }
+    })
+
 
 
 })
@@ -65,6 +80,10 @@ describe("Test la fonction d'attaque", function() {
     it("retourne un tableau de position", function() {
         chai.assert.isArray(askAttackPosition());
     })*/
+
+    it("Les coordonnées saisies sont correctes", function(){
+        //chai.assert.
+    })
 
 })
 
