@@ -13,8 +13,8 @@ var expect = chai.expect; // faites ça soit pour expect ET assert, soit pour au
 
 describe("Test de la classe 'Grid'", function() {
 
-    let oGrid;
-    let size = 5;
+    var oGrid;
+    var size = 5;
 
     beforeEach(() => {
         oGrid = new Grid(size);
@@ -48,7 +48,7 @@ describe("Test de la classe 'Grid'", function() {
 describe("Test sur la classe 'Boat'", function() {
 
     beforeEach(() => {
-        let testBoat = new Boat(1,1,1,2,2,0,5);
+        var testBoat = new Boat(1,1,1,2,2,0,5);
     })
 
     /*it("Le bateau n'est pas en dehors de la grille", function() {
@@ -58,7 +58,7 @@ describe("Test sur la classe 'Boat'", function() {
 
 describe("Test sur la classe 'Player'", function() {
 
-    let oPlayer;
+    var oPlayer;
 
     beforeEach(() => {
         oPlayer = new Player();
