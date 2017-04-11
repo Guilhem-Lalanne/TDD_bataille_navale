@@ -1,4 +1,5 @@
 //var grid = new Array();
+require('grid.js')();
 
 /* MAIN SCRIPT */
 
@@ -30,7 +31,7 @@ class Player {
 
 }
 
-class Grid {
+/*class Grid {
 
     constructor(gridSize) {
 	
@@ -51,7 +52,7 @@ class Grid {
 	    console.log(value);
 	});
     }
-}
+}*/
 
 let oGridPlayer1 = new Grid(5);
 let oGridPlayer2 = new Grid(5);
