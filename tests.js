@@ -1,6 +1,8 @@
 
 /* MOCHA TEST */
 
+var mocha = require('mocha');
+
 mocha.setup('bdd');
 
 var expect = chai.expect; // faites ça soit pour expect ET assert, soit pour aucun ; avec un seul des deux on a un peu l'impression, dans votre code, que vous utilisez des libs différentes
