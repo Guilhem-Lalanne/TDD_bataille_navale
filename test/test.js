@@ -1,14 +1,14 @@
 
-var assert = require('assert');
+/*var assert = require('assert');
 
 exports['ceci est un test'] = function(assert) {
     assert.equal(1, 1, 'est egale');
-}
+}*/
 
 
 /* MOCHA TEST */
 
-//var mocha = require('mocha');
+var mocha = require('mocha');
 //var chai = require('chai');
 
 //mocha.setup('bdd');
@@ -20,6 +20,18 @@ exports['ceci est un test'] = function(assert) {
     expect(test()).to.equal(9);
     });
 });*/
+
+var assert = require('assert');
+
+describe('Array', function() {
+  describe('#indexOf()', function() {
+    it('should return -1 when the value is not present', function() {
+      assert.equal(-1, [1,2,3].indexOf(4));
+    });
+  });
+});
+
+
 
 // describe("Test de la classe 'Grid'", function() {
 
