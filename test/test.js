@@ -8,6 +8,8 @@ exports['ceci est un test'] = function(assert) {
 
 
 /* MOCHA TEST */
+var gridClass = require("grid.js");
+var oGridClass = new gridClass();
 
 var mocha = require('mocha');
 //var chai = require('chai');
@@ -26,7 +28,7 @@ var assert = require('assert');
 
 describe('Test sur la classe "GRID"', function() {
 
-    var oGrid = new Grid(5);
+    var oGrid = new oGridClass.Grid(5);
 
     it('La grille est un tableau', function() {
 
