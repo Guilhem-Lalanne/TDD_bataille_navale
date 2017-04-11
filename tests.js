@@ -2,6 +2,7 @@
 /* MOCHA TEST */
 
 var mocha = require('mocha');
+var chai = require('chai');
 
 mocha.setup('bdd');
 
