@@ -1,5 +1,5 @@
 {
-	"main":"index.html",
+	"main":"main.js",
     "scripts": {
 	    "test":"mocha"
     },

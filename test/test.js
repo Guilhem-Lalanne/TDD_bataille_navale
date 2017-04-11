@@ -22,8 +22,6 @@ var mocha = require('mocha');
     });
 });*/
 
-var main = require('main.js');
-
 var assert = require('assert');
 
 describe('Test sur la classe "GRID"', function() {
