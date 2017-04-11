@@ -1,6 +1,7 @@
 
 /*var assert = require('assert');
 
+
 exports['ceci est un test'] = function(assert) {
     assert.equal(1, 1, 'est egale');
 }*/
@@ -21,15 +22,13 @@ var mocha = require('mocha');
     });
 });*/
 
+require('main.js');
+
 var assert = require('assert');
 
 describe('Test sur la classe "GRID"', function() {
 
-    var oGrid;
-
-    beforeEach(function() {
-      oGrid = new oGrid(5);
-    })
+    var oGrid = new oGrid(5);
 
     it('La grille est un tableau', function() {
 
