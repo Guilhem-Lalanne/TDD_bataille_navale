@@ -27,37 +27,35 @@ describe("Test de la classe 'Grid'", function() {
         chai.assert.isArray(oGrid.grid);
     })
 
-    it("La grille n'est pas null", function() {
-        expect(oGrid.grid).to.not.be.null;
-    })
+    // it("La grille n'est pas null", function() {
+    //     expect(oGrid.grid).to.not.be.null;
+    // })
 
-    it("La grille ne contient pas de -1", function() {
-        assert.notEqual(oGrid.grid[3][1], -1, 'these numbers are not equal');
-        // uncomplete
-    })
+    // it("La grille ne contient pas de -1", function() {
+    //     assert.notEqual(oGrid.grid[3][1], -1, 'these numbers are not equal');
+    //     // uncomplete
+    // })
 
-    it("La grille ne contient pas de nombres négatifs", function() {
-        for (var i = 0; i < size; i++) {
-            for (var j = 0; j < size; j++) {
-                assert.isAtLeast(oGrid.grid[i][j], 0, 'greater  than or equal to 0');
-            }
-        }
-    })
-
-
+    // it("La grille ne contient pas de nombres négatifs", function() {
+    //     for (var i = 0; i < size; i++) {
+    //         for (var j = 0; j < size; j++) {
+    //             assert.isAtLeast(oGrid.grid[i][j], 0, 'greater  than or equal to 0');
+    //         }
+    //     }
+    // })
 
 })
 
-describe("Test sur la classe 'Boat'", function() {
+// describe("Test sur la classe 'Boat'", function() {
 
-    beforeEach(function() {
-        var testBoat = new Boat(1,1,1,2,2,0,5);
-    })
+//     beforeEach(function() {
+//         var testBoat = new Boat(1,1,1,2,2,0,5);
+//     })
 
-    /*it("Le bateau n'est pas en dehors de la grille", function() {
-        chai.assert.isOk('everything', 'everything is ok');
-    })*/
-})
+//     /*it("Le bateau n'est pas en dehors de la grille", function() {
+//         chai.assert.isOk('everything', 'everything is ok');
+//     })*/
+// })
 
 // describe("Test sur la classe 'Player'", function() {
 
@@ -74,21 +72,21 @@ describe("Test sur la classe 'Boat'", function() {
 //     })
 // })
 
-describe("Test la fonction d'attaque", function() {
+// describe("Test la fonction d'attaque", function() {
 
-    /*it("reponse envoyé", function() {
-        chai.assert.isOk(askAttackPosition());
-    })
+//     /*it("reponse envoyé", function() {
+//         chai.assert.isOk(askAttackPosition());
+//     })
 
-    it("retourne un tableau de position", function() {
-        chai.assert.isArray(askAttackPosition());
-    })*/
+//     it("retourne un tableau de position", function() {
+//         chai.assert.isArray(askAttackPosition());
+//     })*/
 
-    it("Les coordonnées saisies sont correctes", function(){
-        //chai.assert.
-    })
+//     it("Les coordonnées saisies sont correctes", function(){
+//         //chai.assert.
+//     })
 
-})
+// })
 
 //mocha.run();
 
