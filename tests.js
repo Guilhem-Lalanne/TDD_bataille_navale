@@ -90,6 +90,6 @@ describe("Test la fonction d'attaque", function() {
 
 })
 
-mocha.run();
+//mocha.run();
 
 /* END MOCHA */
