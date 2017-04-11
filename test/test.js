@@ -8,6 +8,7 @@ exports['ceci est un test'] = function(assert) {
 
 
 /* MOCHA TEST */
+require('grid.js')();
 
 var mocha = require('mocha');
 //var chai = require('chai');
