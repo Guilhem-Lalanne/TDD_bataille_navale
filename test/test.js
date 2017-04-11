@@ -9,7 +9,7 @@ exports['ceci est un test'] = function(assert) {
 
 /* MOCHA TEST */
 
-import "../grid.js";
+include("../grid.js");
 /*var gridClass = require("../grid.js");*/
 
 var mocha = require('mocha');
