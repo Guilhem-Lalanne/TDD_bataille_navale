@@ -1,5 +1,5 @@
 
-assert.equal(1, 1, 'est egale') // will log result
+assert.equal(1, 1, 'est egale');
 
 /* MOCHA TEST */
 
