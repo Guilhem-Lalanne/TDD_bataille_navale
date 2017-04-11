@@ -9,7 +9,6 @@ exports['ceci est un test'] = function(assert) {
 
 /* MOCHA TEST */
 var gridClass = require("../grid.js");
-var oGridClass = new gridClass();
 
 var mocha = require('mocha');
 //var chai = require('chai');
