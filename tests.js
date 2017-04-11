@@ -16,7 +16,7 @@ describe("Test de la classe 'Grid'", function() {
     var oGrid;
     var size = 5;
 
-    beforeEach(() => {
+    beforeEach(function() {
         oGrid = new Grid(size);
     })
 
@@ -47,7 +47,7 @@ describe("Test de la classe 'Grid'", function() {
 
 describe("Test sur la classe 'Boat'", function() {
 
-    beforeEach(() => {
+    beforeEach(function() {
         var testBoat = new Boat(1,1,1,2,2,0,5);
     })
 
@@ -56,20 +56,20 @@ describe("Test sur la classe 'Boat'", function() {
     })*/
 })
 
-describe("Test sur la classe 'Player'", function() {
+// describe("Test sur la classe 'Player'", function() {
 
-    var oPlayer;
+//     var oPlayer;
 
-    beforeEach(() => {
-        oPlayer = new Player();
-    })
+//     beforeEach(() => {
+//         oPlayer = new Player();
+//     })
 
-    it("oPlayer est un objet", function() {
-        //chai.assert.ifError(oPlayer.attack(-1,-1,0))('everything', 'everything is ok');
-        chai.assert.typeOf(oPlayer, 'object');
+//     it("oPlayer est un objet", function() {
+//         //chai.assert.ifError(oPlayer.attack(-1,-1,0))('everything', 'everything is ok');
+//         chai.assert.typeOf(oPlayer, 'object');
 
-    })
-})
+//     })
+// })
 
 describe("Test la fonction d'attaque", function() {
 
