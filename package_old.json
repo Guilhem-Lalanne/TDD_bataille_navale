@@ -1,16 +1,17 @@
 {
-  "name": "batnav",
-  "version": "0.0.1",
-  "description": "Projet de LPro",
   "main": "main.js",
-  "directories": {
-    "test": "npm test"
-  },
-  "dependencies": {},
-  "devDependencies": {},
   "scripts": {
-    "test": "mocha ./test/test.js",
+    "test": "mocha",
     "start": "node server.js"
+  },
+  "presets": [
+    "env"
+  ],
+  "name": "batnav",
+  "description": "Projet de LPro",
+  "version": "0.0.1",
+  "directories": {
+    "test": "test"
   },
   "repository": {
     "type": "git",
