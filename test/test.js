@@ -13,7 +13,7 @@ exports['ceci est un test'] = function(assert) {
 
 //var mocha = require('mocha');
 //var chai = require('chai');
-var chai = require('chai');
+//var chai = require('chai');
 
 
 //mocha.setup('bdd');
